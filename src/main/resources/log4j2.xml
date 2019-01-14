@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="MyApp" packages="">
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yy-MM-dd HH:mm:ss:SSS} %-5p [%c:%L] - %m%n"/>
+        </Console>
+        <File name="MyFile" fileName="logs/app.log">
+            <PatternLayout>
+                <!--<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>-->
+                <Pattern>%d{yy-MM-dd HH:mm:ss:SSS} %-5p [%c:%L] - %m%n</Pattern>
+            </PatternLayout>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="MyFile"/>
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>
