@@ -4,7 +4,7 @@
         <Console name="STDOUT" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yy-MM-dd HH:mm:ss:SSS} %-5p [%c:%L] - %m%n"/>
         </Console>
-        <File name="MyFile" fileName="logs/app.log">
+        <File name="MyFile" fileName="logs/log4j-v2.log">
             <PatternLayout>
                 <!--<Pattern>%d %p %c{1.} [%t] %m%n</Pattern>-->
                 <Pattern>%d{yy-MM-dd HH:mm:ss:SSS} %-5p [%c:%L] - %m%n</Pattern>
